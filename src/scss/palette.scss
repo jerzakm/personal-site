@@ -1,0 +1,14 @@
+$colors: (darkest: #212121,
+primary: #F44336,
+primary-light: #FF5252,
+primary-lighter: rgb(255, 124, 124),
+primary-lightest: rgb(248, 221, 221),
+text-secondary: #FFFFFF,
+text: rgba(30,30,30,1),
+text-light: rgba(70,70,70,1),
+bg: #FFFFFF,
+contour: rgb(233, 227, 227));
+
+@function color($color-name) {
+    @return map-get($colors, $color-name);
+}
